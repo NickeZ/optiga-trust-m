@@ -58,13 +58,13 @@ extern "C" {
 // Identifier to store and read OPTIGA Shielded connection manage context on host platform,
 // If the manage context data is to be stored in volatile memory only, 
 // set OPTIGA_COMMS_MANAGE_CONTEXT_ID to OPTIGA_LIB_PAL_DATA_STORE_NOT_CONFIGURED.
-#define OPTIGA_COMMS_MANAGE_CONTEXT_ID                  (0x22)
+#define OPTIGA_COMMS_MANAGE_CONTEXT_ID                  (OPTIGA_LIB_PAL_DATA_STORE_NOT_CONFIGURED)
 
 // !!!OPTIGA_LIB_PORTING_REQUIRED
 // Identifier to store and read OPTIGA application context handle on host platform, 
 // If the application context data is to be stored in volatile memory only, 
 // set OPTIGA_COMMS_MANAGE_CONTEXT_ID to OPTIGA_LIB_PAL_DATA_STORE_NOT_CONFIGURED.
-#define OPTIGA_HIBERNATE_CONTEXT_ID                     (0x33)
+#define OPTIGA_HIBERNATE_CONTEXT_ID                     (OPTIGA_LIB_PAL_DATA_STORE_NOT_CONFIGURED)
 
 /// @cond hidden
 /// Size of application context handle buffer

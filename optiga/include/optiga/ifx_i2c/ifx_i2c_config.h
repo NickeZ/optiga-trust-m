@@ -133,6 +133,8 @@ extern "C" {
 /** @brief Log ID number for platform abstraction layer */
 #define IFX_I2C_LOG_ID_PAL          (0x04)
 
+#define IFX_I2C_LOG(...) printf(__VA_ARGS__)
+
 #if defined OPTIGA_COMMS_SHIELDED_CONNECTION
     #define IFX_I2C_TL_ENABLE              (1U)
     #define IFX_I2C_PRL_ENABLED            (1U)
